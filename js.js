@@ -1,7 +1,7 @@
-// new CountdownTimer({
-//   selector: "#timer-1",
-//   targetDate: new Date("Jul 17, 2021"),
-// });
+new CountdownTimer({
+  selector: "#timer-1",
+  targetDate: new Date("Jul 17, 2021"),
+});
 
 const refs = {
   daysValue: document.querySelector('span[data-value="days"]'),
@@ -9,7 +9,8 @@ const refs = {
   minsValue: document.querySelector('span[data-value="mins"]'),
   secsValue: document.querySelector('span[data-value="secs"]'),
 };
-//const targetDate = CountdownTimer.targetDate.getTime();
+// const targetDate = CountdownTimer.targetDate.getTime();
+
 const targetDate = new Date("Jul 17, 2021").getTime();
 
 setInterval(() => {
